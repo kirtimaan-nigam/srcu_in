@@ -1,0 +1,221 @@
+body, html {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    background-color: black;
+    color: white;
+    font-family: Lato;
+    font-size: 2vmax;
+}
+
+#viewer {
+    background-color: black;
+    overflow: scroll;
+}
+
+#container {
+    display: none;
+}
+
+#backButton, #showsButton, #menu, #close, #fullscreen, #live {
+    position: fixed;
+    z-index:3;
+}
+
+#menu, #close, #fullscreen {
+    opacity:0.5;
+}
+
+#backButton:hover, #showsButton:hover, #menu:hover, #close:hover, #fullscreen:hover, #live:hover {
+    opacity:1;
+    -webkit-filter: grayscale(60%);
+    filter: hue-rotate(180deg);
+}
+
+#showsButton {
+    top:15vw;
+    left:15vw;
+}
+
+#channelLogo {
+    position: fixed;
+    z-index: 2;
+}
+
+#menu {
+    top:5vw;
+    left:5vw;
+    width: 5vw;
+    height: 5vw;
+}
+
+#srcuLogo {
+    bottom:5vw;
+    right:5vw;
+    width: 5vw;
+    height: 5vw;
+    position: fixed;
+    z-index: 4;
+    opacity: 0.6;
+}
+
+#srcuLogo:hover {
+    opacity: 1;
+}
+
+#close {
+    top:5vw;
+    left:5vw;
+    width: 5vw;
+    height: 5vw;
+}
+
+#fullscreen {
+    bottom:5vw;
+    left:5vw;
+    width: 5vw;
+    height: 5vw;
+}
+
+#backButtonImg {
+    width: 7vw;
+    height: 7vw;
+}
+
+#showsButtonImg {
+    width: 7vw;
+    height: 7vw;
+}
+
+#channelLogoImg {
+    width: 11vw;
+    height: 11vw;
+}
+
+#liveText, #liveImg {
+    float: left;
+}
+
+#liveText {
+    margin-top: 1.3vw;
+    margin-left: 0.4vw;
+}
+
+#liveImg {
+    width: 5vw;
+    height: 5vw;
+    z-index: 1;
+}
+
+#backButtonText, #showsButtonText {
+    text-align: center;
+}
+
+#showDetails {
+    position: absolute;
+    z-index: 2;
+    opacity: 0.9;
+    overflow-y: scroll;
+    margin-right: 1vw;
+    
+}
+
+#showName {
+    color: white;
+}
+
+#showInfo {
+    font-size: 2vmax;
+}
+
+#showEp {
+    font-size: 2vmax;
+}
+
+.thumb {
+    width: 16vw;
+    height: 9vw;
+    margin-right: 1vw;
+    margin-top: 1vw;
+}
+
+.live {
+    opacity: 1;
+}
+
+.vod {
+    opacity: 0.5;
+}
+
+.vod:hover {
+    opacity: 1;
+}
+
+.thumb:hover {
+    opacity:0.6;
+}
+
+.hiddenDetails {
+    display: none;
+}
+
+.bold {
+    font-size: 4vmax;
+    font-weight: Bold;
+}
+
+#channels {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+}
+
+#channelThumbnails {
+    line-height: 0;
+    background-color: black;
+}
+
+#channelThumbnails img {
+    width: 25vw; !important;
+    height: 25vw !important;
+    padding: 0px;
+    float: left;
+}
+
+#HUD {
+    z-index: 2;
+}
+
+#videoStream {
+    position: fixed;
+    top: 0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    width:100%;
+    height:100%;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+}
+
+#protection1 {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40%;
+    z-index: 1;
+}
+
+#protection2 {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 40%;
+    z-index: 1;
+}
+
+
