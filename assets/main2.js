@@ -239,7 +239,7 @@ function enterFullscreenButtonClicked() {
         elem.webkitRequestFullscreen();
     }
     document.getElementById("fullscreen").setAttribute("onmousedown", "exitFullscreenButtonClicked();");
-    document.getElementById("fullscreen").setAttribute("src", "icons/exitfullscreenButton.png");
+    document.getElementById("fullscreen").setAttribute("src", "icons/exitFullscreenButton.png");
 }
 
 function exitFullscreenButtonClicked() {
