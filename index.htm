@@ -1,0 +1,73 @@
+<html>
+	<head>
+		<title>SRCU Netowrk</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="assets/main2.js"></script>
+		<link rel="stylesheet" href="assets/styles2.css">
+		<link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	</head>
+	<body onresize="winResized();">
+    <div id="viewer">
+		<div id="container">
+        <div id="HUD">
+            <img id="menu" src="icons/menuButton.png" onmousedown="showHUD();"/>
+            <img id="fullscreen" src="icons/fullscreenButton.png" onmousedown="enterFullscreenButtonClicked();" />
+            <img id="close" class="hiddenDetails" src="icons/closeButton.png" onmousedown="hideHUD();"/>
+            <img id="srcuLogo" src="SRCU_logo.jpg" />
+            <div id="backButton" class="hiddenDetails" onmousedown="backButtonClicked();" onmousemove="backButtonHover();" onmouseleave="backButtonMouseExit();">
+                <img id="backButtonImg" src="icons/backButton.png" />
+                <div id="backButtonText" class="hiddenDetails">Channels</div>
+            </div>
+            
+            <div id="showsButton" class="hiddenDetails" onmousedown="showsButtonClicked();" onmousemove="showsButtonHover();" onmouseleave="showsButtonMouseExit();">
+                <img id="showsButtonImg" src="icons/showsButton.png" />
+                <div id="showsButtonText" class="hiddenDetails">Shows</div>
+            </div>
+            
+            <div id="channelLogo" class="hiddenDetails" >
+                <img id="channelLogoImg" src="channelLogo.png" />
+            </div>
+            
+            <div id="live" class="hiddenDetails" onmousedown="live(id);" onmousemove="liveHover();" onmouseleave="liveMouseExit();">
+                <img id="liveImg" src="icons/liveButton.png"/>
+                <div id="liveText" class="hiddenDetails">Live</div>
+            </div>
+            
+            
+            <div id="showDetails">
+				<div id="showName" class="hiddenDetails bold">Hindustan News</div>
+                
+				<div id="showInfo" class="hiddenDetails">At inani vitae cum, sed no vide audire quaestio. Malis fierent cu eum. Et quo eirmod fabulas luptatum. Ius vero elit ei, usu tempor torquatos adipiscing in, zril volumus nec et. Paulo saepe mentitum nec eu, ad est ornatus probatus erroribus. Congue utroque admodum te pri, omnes oblique cu vix.\
+                </div>
+                
+				<div id="showEp" class="hiddenDetails">
+                    <img id="1" onmousedown="t1();" class="thumb" src="shows/sh1/t1.png"/>
+                    <img id="2" onmousedown="t2();" class="thumb" src="shows/sh1/t2.png"/>
+                    <img id="3" onmousedown="t3();" class="thumb" src="shows/sh1/t3.png"/>
+                </div>
+			</div>
+            </div>
+            <div id="protection1" onmousedown="hideHUD();"></div>
+            <div id="protection2" onmousedown="hideHUD();"></div>
+            <iframe id="videoStream" src="" frameborder="0" allowfullscreen style="position: fixed; z-index:0;">Please contect customer care.</iframe>
+        </div>
+        
+        <div id="channels">
+            <div id="channelThumbnails">
+                <img id="0" src="channelThumb/channelThumb0.png" onmousedown="channelClicked(0);" />
+                <img id="1" src="channelThumb/channelThumb1.gif" onmousedown="channelClicked(1);" />
+                <img id="2" src="channelThumb/channelThumb2.gif" onmousedown="channelClicked(2);" />
+                <img id="3" src="channelThumb/channelThumb3.png" onmousedown="channelClicked(3);" />
+                <img id="4" src="channelThumb/channelThumb4.gif" onmousedown="channelClicked(4);" />
+                <img id="5" src="channelThumb/channelThumb5.png" onmousedown="channelClicked(5);" />
+                <img id="6" src="channelThumb/channelThumb6.png" onmousedown="channelClicked(6);" />
+                <img id="7" src="channelThumb/channelThumb7.png" onmousedown="channelClicked(7);" />
+            </div>
+        </div>
+        
+        <div id="shows">
+        
+        </div>
+	</div>
+    </body>
+</html>
