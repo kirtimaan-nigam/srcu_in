@@ -179,7 +179,7 @@ body, html {
 }
 
 #channelThumbnails img {
-    width: 25vw; !important;
+    width: 24vw; !important;
     height: 25vw !important;
     padding: 0px;
     float: left;
